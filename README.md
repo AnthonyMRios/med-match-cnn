@@ -9,7 +9,7 @@ This repo contains code for our 2018 NAACL paper titled "EMR Coding with Semi-Pa
 - Python 2.7
 - numpy 1.11.1+
 - scipy 0.18.0+
-= Theano
+- Theano
 - gensim
 - sklearn
 
