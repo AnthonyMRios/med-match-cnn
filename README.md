@@ -6,6 +6,7 @@ This repo contains code for our 2018 NAACL paper titled "EMR Coding with Semi-Pa
 
 ## Usage
 ### Training
+
 ```
 python train_match.py --num_epochs 25 --word_vectors 'gensim_w2v_pubmed' --model_type cnn --train_data_X './data/train_data.json' --val_data_X './data/dev_data.json' --checkpoint_dir './checkpoints' --num_feat_maps 300 --grad_clip 3 --min_df 5 --lr 0.0001 --penalty 0.0000 --dropout 0.5 --lr_decay 0.0000 --cnn_conv_size 3 4 5  --checkpoint_name my_model_name
 ```
@@ -72,6 +73,36 @@ optional arguments:
   --num_support NUM_SUPPORT
                         Number nearest neighbors to sample for each input
                         instance.
+```
+
+### Testing
+
+The file "test_match.py" provides an example on how to run and evaluate our method.
+
+```
+python test_match.py --data_X './data/test_data.json' --checkpoint_model './checkpoints/my_model_name.pkl' --train_data_X './data/train_data.json' --minibatch_size 3 --knn 8 --val_minibatch_size 3
+```
+
+```
+usage: test_match.py [-h] [--checkpoint_model CHECKPOINT_MODEL]
+                     [--data_X DATA_X] [--minibatch_size MINIBATCH_SIZE]
+                     [--val_minibatch_size VAL_MINIBATCH_SIZE] [--knn KNN]
+                     [--train_data_X TRAIN_DATA_X]
+
+Test Neural Network.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --checkpoint_model CHECKPOINT_MODEL
+                        Checkpoint Model.
+  --data_X DATA_X       Test/Validation Data.
+  --minibatch_size MINIBATCH_SIZE
+                        Mini-batch Size.
+  --val_minibatch_size VAL_MINIBATCH_SIZE
+                        Mini-batch Size.
+  --knn KNN             KNN Size.
+  --train_data_X TRAIN_DATA_X
+                        Training Data.
 ```
 
 ## Acknowledgements
