@@ -6,6 +6,9 @@ This repo contains code for our 2018 NAACL paper entitled "EMR Coding with Semi-
 
 ## Usage
 ### Training
+```
+python train_match.py --num_epochs 25 --word_vectors 'gensim_w2v_pubmed' --model_type cnn --train_data_X './data/train_data.json' --val_data_X './data/dev_data.json' --checkpoint_dir './checkpoints' --num_feat_maps 300 --grad_clip 3 --min_df 5 --lr 0.0001 --penalty 0.0000 --dropout 0.5 --lr_decay 0.0000 --cnn_conv_size 3 4 5  --checkpoint_name my_model_name
+```
 
 ```
 usage: train_match.py [-h] [--num_epochs NUM_EPOCHS] [--num_models NUM_MODELS]
