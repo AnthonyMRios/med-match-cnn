@@ -4,6 +4,15 @@ This repo contains code for our 2018 NAACL paper titled "EMR Coding with Semi-Pa
 
 **Note:** Examples of the data format can be found in the data/ folder.
 
+## Required Packages
+
+- Python 2.7
+- numpy 1.11.1+
+- scipy 0.18.0+
+= Theano
+- gensim
+- sklearn
+
 ## Usage
 ### Training
 
