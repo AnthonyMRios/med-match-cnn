@@ -1,6 +1,6 @@
 # EMR Coding with Semi-Parametric Multi-Head Matching Networks
 
-This repo contains code for our 2018 NAACL paper entitled "EMR Coding with Semi-Parametric Multi-Head Matching Networks".
+This repo contains code for our 2018 NAACL paper titled "EMR Coding with Semi-Parametric Multi-Head Matching Networks".
 
 **Note:** Examples of the data format can be found in the data/ folder.
 
