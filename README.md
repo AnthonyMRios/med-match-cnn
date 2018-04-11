@@ -12,6 +12,7 @@ This repo contains code for our 2018 NAACL paper titled "EMR Coding with Semi-Pa
 - Theano
 - gensim
 - sklearn
+- nltk
 
 ## Usage
 ### Training
