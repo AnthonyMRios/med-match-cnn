@@ -1,4 +1,4 @@
-# Adversarial
+# EMR Coding with Semi-Parametric Multi-Head Matching Networks
 
 This repo contains code for our 2018 NAACL paper entitled "EMR Coding with Semi-Parametric Multi-Head Matching Networks".
 
